@@ -14,7 +14,8 @@ def print_first_directors_movie_titles
     while secondary_index < directors_database[index][:movies].length do
         puts directors_database[index][:movies][secondary_index][:title]
       end
-      end
+    secondary_index += 1
     end
+    index += 1 
   end
 end
