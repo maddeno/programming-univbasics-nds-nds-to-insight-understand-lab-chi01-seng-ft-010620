@@ -8,9 +8,11 @@ end
 
 def print_first_directors_movie_titles
   first_director = directors_database.first 
-  index = 0 
-  while index < first_director.length do
-    puts first_director[index][title]
-    index += 1
+  row_index = 0 
+  while ro_index < first_director.length do
+    element_index = 0 
+    
+   end
+    row_index += 1
   end
 end
