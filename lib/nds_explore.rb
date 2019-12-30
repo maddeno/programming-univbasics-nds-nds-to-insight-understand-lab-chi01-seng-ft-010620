@@ -11,6 +11,7 @@ def print_first_directors_movie_titles
   index = 0 
   movies = first_director[:movies] 
   while index < movies.length do 
-    puts movies
+    puts movies[index][:title]
+    index += 1 
   end
 end
