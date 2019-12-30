@@ -8,7 +8,6 @@ end
 
 def print_first_directors_movie_titles
   first_director = directors_database.first 
-  pp first_director
   index = 0 
   movies = first_director[:movies] 
   while index < movies.length do 
