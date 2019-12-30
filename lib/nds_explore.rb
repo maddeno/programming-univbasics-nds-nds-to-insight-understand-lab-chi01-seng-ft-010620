@@ -11,9 +11,8 @@ def print_first_directors_movie_titles
   index = 0 
   while index < directors_database.length do 
     secondary_index = 0 
-    while secondary_index < directors_database[index].length do 
-      if secondary_index == :title 
-        puts 
+    while secondary_index < directors_database[index][:movies].length do
+        puts directors_database[index][:movies][secondary_index]
       end
       end
     end
