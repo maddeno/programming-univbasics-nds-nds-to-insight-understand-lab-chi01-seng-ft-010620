@@ -9,5 +9,8 @@ end
 def print_first_directors_movie_titles
   first_director = directors_database.first 
   index = 0 
-  movies = 
+  movies = first_director[:movies] 
+  while index < movies.length do 
+    puts movies
+  end
 end
