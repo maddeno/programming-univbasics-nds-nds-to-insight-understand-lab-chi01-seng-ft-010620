@@ -9,13 +9,12 @@ end
 def print_first_directors_movie_titles
   first_director = directors_database.first 
   index = 0 
-  while index < directors_database.length do 
+  while index < first_director.length do
     secondary_index = 0 
-    while secondary_index < directors_database[index][:movies].length do
-        puts directors_database[index][:movies][secondary_index][:title]
-      end
-    secondary_index += 1
+    while secondary_index < first_director[index].length do
+      puts first_director[index][:movies][:title]
+      secondary_index += 1
     end
-    index += 1 
+    index += 1
   end
 end
